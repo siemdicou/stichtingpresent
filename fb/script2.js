@@ -128,7 +128,7 @@ interact('.dropzone').dropzone({
 
          // "4:59"
         // millisToMinutesAndSeconds(60999);  // "1:01"
-        document.querySelector('#score').innerHTML = millisToMinutesAndSeconds(global.sec);
+        document.querySelector('#score').innerHTML = "Uw tijd is: " + millisToMinutesAndSeconds(global.sec);
 
 
 
