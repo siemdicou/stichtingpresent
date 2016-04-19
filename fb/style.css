@@ -14,12 +14,35 @@ html body{
 
 }
 #div1 {width:70px;height:300px;padding:10px;}
-#drag1{ margin-left:23%;
-        position: absolute; }
-#drag2{ margin-left:5%;
-        position: absolute; }
-#drag3{ margin-left:66%;
-        position: absolute; }
+#drag1{ margin-left:3%; 
+        margin-top: 45%;
+        transform: rotate(37deg);
+        position: absolute; 
+}
+#drag2{ margin-left:-58%; 
+        margin-top: 37%;
+        transform: rotate(67deg);
+        position: absolute; 
+}
+#drag3{ margin-left:-39%;
+        margin-top: 49%;
+        position: absolute; 
+}
+#drag4{ margin-left:-20%;
+        margin-top: 30%;
+        position: absolute; 
+}
+#drag5{ margin-left:-22%;
+        margin-top: 30%;
+        transform: rotate(27deg);
+        position: absolute; 
+}  
+#drag6{ margin-left:19%; 
+        margin-top: 26%;
+        transform: rotate(-7deg);
+        position: absolute; 
+}
+
 #dragframe{width: 100%; height: 100%; 
 }
 .fb-like{
@@ -43,7 +66,7 @@ html body{
 /*bs*/
 #trashcan{
   width: 100%;
-  margin-top: 25em;
+  margin-top: 28em;
 }
 .dropzone {
   /*background-color: #ccc;*/
