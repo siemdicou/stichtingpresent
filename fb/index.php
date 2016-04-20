@@ -25,14 +25,12 @@
     <a href="http://stichtingpresent.nl/meedoen-als/" target="_blank"><button class="stichtingbutton">Klik dan hier!</button></a><br><br>
     <p id="time">
     <div id="score"></div><Br>
-    </p>
+    </p>  
 </div>
 
 
 <!-- <div id="yes-drop" class="draggable drag-drop"> #yes-drop </div>
-
 <div id="outer-dropzo   ne" class="dropzone">
-
  </div>
  -->
 
@@ -40,7 +38,6 @@
 <!--<div class="fb-like" data-href="https://apps.facebook.com/1689105558004265/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>-->
 
     <img id="drag1" class="yes-drop draggable drag-drop" src="http://vignette1.wikia.nocookie.net/joke-battles/images/c/ce/Doritos-nacho-cheese.png/revision/latest?cb=20160304034035" draggable="true" ondragstart="drag(event)" width="40">
-     <img id="drag2" class="yes-drop draggable drag-drop " src="http://i659.photobucket.com/albums/uu318/senneken/fles.png" draggable="true" ondragstart="drag(event)" width="100" height="69">
     <img id="drag3" class="yes-drop draggable drag-drop " src="http://www.fancyicons.com/free-icons/174/the-city/png/256/cigarretes_blue_256.png" draggable="true" ondragstart="drag(event)" width="60" height="50">
     <img id="drag4" class="yes-drop draggable drag-drop " src="http://www.bedrijfsafvalspecialist.nl/uploads/nieuwwww/bedrijfsafval%20container%20vuilniszak.png" draggable="true" ondragstart="drag(event)" width="60" height="69">
      <img id="drag5" class="yes-drop draggable drag-drop " src="http://www.bedrijfsafvalspecialist.nl/uploads/nieuwwww/bedrijfsafval%20container%20vuilniszak.png" draggable="true" ondragstart="drag(event)" width="60" height="69">
@@ -67,7 +64,6 @@
     $(window).load(function() {
         // Animate loader off screen
         $(".se-pre-con").fadeOut("slow");
-
     });
 </script>
 

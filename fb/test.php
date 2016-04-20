@@ -1,4 +1,4 @@
-
+<script type="text/javascript">
 var global = {
     removes : 0,
     timer: false,
@@ -116,7 +116,7 @@ interact('.dropzone').dropzone({
 
     test.remove();
     global.removes++;
-    if (global.removes == 5) {
+    if (global.removes == 1) {
         $('#eindscherm').show(1000);
         clearInterval(loop);
         console.log(global.sec);
@@ -124,14 +124,13 @@ interact('.dropzone').dropzone({
         var minutes = Math.floor(millis / 60);
         var seconds = ((millis % 60000) / 1).toFixed(0);
         return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
-        dispatch("the contacts button is clicked");
     }
 
+         // "4:59"
+        // millisToMinutesAndSeconds(60999);  // "1:01"
         document.querySelector('#score').innerHTML = "Uw tijd is: " + millisToMinutesAndSeconds(global.sec);
-        $.post('/model.php', {seconds: global.sec});
-        addEventListener("the contacts button is clicked", function() {
-            
-        });
+        
+
 
     }
   },
@@ -142,6 +141,6 @@ interact('.dropzone').dropzone({
   }
 });
 
-
+</script>
 
 
