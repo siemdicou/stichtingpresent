@@ -10,7 +10,7 @@ function onLogin(response) {
   if (response.status == 'connected') {
     FB.api('/me?fields=name', function(data) {
       var welcomeBlock = document.getElementById('fb-welcome');
-      welcomeBlock.innerHTML = 'Hello ' + data.name;
+      welcomeBlock.innerHTML = 'Hallo ' + data.name + '!';
     });
   }
 }
