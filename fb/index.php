@@ -22,7 +22,8 @@
 
 <div id="eindscherm">
     <h1>Dat deed je goed! Wil je meer vrijwilligerswerk doen?</h1>
-    <a href="http://stichtingpresent.nl/meedoen-als/" target="_blank"><button class="stichtingbutton">Klik dan hier!</button></a><br><br>
+    <a href="http://stichtingpresent.nl/meedoen-als/" target="_blank"><button class="stichtingbutton">Klik dan hier!</button></a>
+    <a href="http://thomasstevens.nl/stichtingpresent#two" target="_blank"><button class="stichtingbutton">Highscores</button></a><br><br>
     <p id="time">
     <div id="score"></div><Br>
     </p>  

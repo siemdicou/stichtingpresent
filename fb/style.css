@@ -4,43 +4,53 @@ html body{
     margin: 0px;
     padding: 0px;
     height: 100%;
-    background: url(img/garden.jpg);
+    background: url(img/garden2.jpg);
     background-position: center center;
     background-size:cover; 
     background-repeat: no-repeat;
     color: black;
     font-family: "Raleway", Helvetica, sans-serif;
     text-align:center;
+}
+body	{  }
 
-}
 #div1 {width:70px;height:300px;padding:10px;}
-#drag1{ margin-left:3%; 
-        margin-top: 45%;
-        transform: rotate(37deg);
-        position: absolute; 
+#drag1{     left: 81%;
+    top: 76%;
+    transform: rotate(37deg);
+    position: absolute;
 }
-#drag2{ margin-left:-58%; 
-        margin-top: 37%;
+/*
+#drag2{ left:-58%; 
+        top: 37%;
         transform: rotate(67deg);
         position: absolute; 
 }
-#drag3{ margin-left:-39%;
-        margin-top: 49%;
+*/
+#drag3{ left: 37%;
+        top: 85%;
         position: absolute; 
 }
-#drag4{ margin-left:-20%;
-        margin-top: 30%;
-        position: absolute; 
+#drag4{ left: 34%;
+    top: 55%;
+    position: absolute;
+    width: 11em !important;
 }
-#drag5{ margin-left:-22%;
-        margin-top: 30%;
-        transform: rotate(27deg);
-        position: absolute; 
+#drag5{ left: 38%;
+    margin-top: 63%;
+    transform: rotate(27deg);
+    position: absolute;
+    width: 14em !important;
 }  
-#drag6{ margin-left:19%; 
-        margin-top: 26%;
+#drag6{ left:40%; 
+        top: 30%;
         transform: rotate(-7deg);
         position: absolute; 
+}
+
+#drag1, #drag2, #drag3, #drag4, #drag5, #drag6{
+    width: 7em;
+    height: auto;
 }
 
 #dragframe{width: 100%; height: 100%; 
@@ -65,13 +75,14 @@ html body{
 }
 /*bs*/
 #trashcan{
-  width: 100%;
-  margin-top: 28em;
+  width: 88%;
+    margin-top: 42em;
+    margin-left: 2em;
 }
 .dropzone {
   /*background-color: #ccc;*/
   /*padding: 10px;*/
-  width: 15%;
+  width: 20%;
   z-index: 99;
   bottom: 2em;
   left: 2em;
@@ -97,12 +108,10 @@ html body{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
     border: 3px solid black;
-    margin-top:15%;
-    margin-left: 25%;
-    margin-right: 30%;
-    width: 50%;
+        margin: 20% 15%;
+    width: 70%;
     z-index:99;
-    font-size: 0.9em;
+    font-size: 1.5em;
 }
 #arrow{
   margin-top: 27%;
@@ -120,41 +129,45 @@ html body{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
     border: 3px solid black;
-    margin: 17% 15%; 
-    width: 70%;
+    margin: 20% 15%;
+    width: 68%;
     display: none;
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1.5em;
+    padding: 1.2em;
 }
 #startButton{
-    padding:1em 4.4em 1em 1.3em;
+    padding:1em 4em 1em 1em !important;
     background-color: white;
     border: 1px solid black;
     width: 10%;
     text-align: center;
-    margin: 2% 43%;  
+    margin: 2% 35%;  
     color: black;  
     font-family:sans-serif;
     cursor: pointer;
+    font-size: 1.3em
 }
 
 #startButton:hover{
-    padding:1em 3em 1em 1.3em;
+    padding:1em 4em 1em 1em !important;
     background-color: black;
     border: 1px solid white;
     width: 10%;
     text-align: center;
-    margin: 2% 43%;  
+    margin: 2% 35%; 
     color: white;  
     font-family:sans-serif;
     transition: 1s;
     cursor: pointer;
+    font-size: 1.3em
 }
 
 .stichtingbutton {
     padding: 1em 1em 1em 1em;
     background-color: white;
     border: 1px solid black;
+    font-size: 1.3em
 }
 
 .stichtingbutton:hover {
@@ -163,6 +176,7 @@ html body{
     border: 1px solid white;
     color: white;
     transition: 1s;
+    font-size: 1.3em
 }
 
 
