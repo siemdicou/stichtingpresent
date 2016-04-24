@@ -20,13 +20,11 @@ body	{  }
     transform: rotate(37deg);
     position: absolute;
 }
-/*
-#drag2{ left:-58%; 
+/*  #drag2{ left:-58%; 
         top: 37%;
         transform: rotate(67deg);
         position: absolute; 
-}
-*/
+} */
 #drag3{ left: 37%;
         top: 85%;
         position: absolute; 
