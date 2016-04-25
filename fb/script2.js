@@ -2,7 +2,8 @@
 var global = {
     removes : 0,
     timer: false,
-    sec:0
+    sec:0,
+    name: 0
 }
 // console.log(global.sec);
 var loop;
@@ -10,7 +11,7 @@ var loop;
 
 function wait(){
     global.sec++;
-    console.log(global.sec);
+    // console.log(global.sec);
 }
 
 
@@ -32,7 +33,7 @@ function dropAll(ev) {
 function start() {
   $('#backgroudStartscherm').fadeOut(1000);
     $('#startscherm').fadeOut(1000);
-
+    //maak session username starttijd
     global.timer = true;
     loop = setInterval(wait,1000);
 } 
@@ -120,17 +121,19 @@ interact('.dropzone').dropzone({
         $('#eindscherm').show(1000);
         clearInterval(loop);
         console.log(global.sec);
+        // lees sessie begintijd + user kill session
         function millisToMinutesAndSeconds(millis) {
         var minutes = Math.floor(millis / 60);
         var seconds = ((millis % 60000) / 1).toFixed(0);
         return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
         dispatch("the contacts button is clicked");
+        //post naam + tijd
     }
 
         document.querySelector('#score').innerHTML = "Uw tijd is: " + millisToMinutesAndSeconds(global.sec);
-        $.post('/model.php', {seconds: global.sec});
+        $.post('model.php', {seconds: global.sec, name: global.name});
         addEventListener("the contacts button is clicked", function() {
-            
+            load("model.php");
         });
 
     }

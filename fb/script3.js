@@ -10,6 +10,7 @@ function onLogin(response) {
     FB.api('/me?fields=name', function(data) {
       var welcomeBlock = document.getElementById('fb-welcome');
       welcomeBlock.innerHTML = 'Hallo ' + data.name + '!';
+      global.name = data.name;  
     });
   }
 }

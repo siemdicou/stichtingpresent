@@ -12,13 +12,14 @@ html body{
     font-family: "Raleway", Helvetica, sans-serif;
     text-align:center;
 }
-body	{  }
+body  {  }
 
 #div1 {width:70px;height:300px;padding:10px;}
 #drag1{     left: 81%;
     top: 76%;
     transform: rotate(37deg);
     position: absolute;
+    width: 20%;
 }
 /*  #drag2{ left:-58%; 
         top: 37%;
@@ -32,13 +33,13 @@ body	{  }
 #drag4{ left: 34%;
     top: 55%;
     position: absolute;
-    width: 11em !important;
+    width: 6em !important;
 }
 #drag5{ left: 38%;
     margin-top: 63%;
     transform: rotate(27deg);
     position: absolute;
-    width: 14em !important;
+    width: 7em !important;
 }  
 #drag6{ left:40%; 
         top: 30%;
@@ -47,7 +48,7 @@ body	{  }
 }
 
 #drag1, #drag2, #drag3, #drag4, #drag5, #drag6{
-    width: 7em;
+    width: 4em;
     height: auto;
 }
 
@@ -74,7 +75,7 @@ body	{  }
 /*bs*/
 #trashcan{
   width: 88%;
-    margin-top: 42em;
+    margin-top: 38em;
     margin-left: 2em;
 }
 .dropzone {

@@ -1,0 +1,237 @@
+<?php 
+	require 'model.php';
+ ?>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Stichting Present</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+			<link rel="stylesheet" href="css/hover.css" />
+			<link href="images/favicon.ico" rel="shortcut icon"></link>
+		</noscript>
+		<script>
+	// dit is een ander scriptje dat zorgt voor een VLOEIEND SCROLLEN.
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html"><img class="logo" src="images/logo.gif" width="100" height="64"  alt=""/></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one">Hoe Werkt Present</a></li>
+						<li><a href="#two">Highscores</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2><FONT COLOR="#EC7535">Stichting</FONT> <FONT COLOR="#58307D">Present</FONT></h2>
+				<p>Zinvol vrijwilligerswerk samen met collega’s, je gezin of vrienden.</p>
+				<ul class="actions">
+					<li>
+						<a href="#" target="_blank" class="button big buttsp">SPEEL</a>&nbsp;&nbsp;&nbsp;
+						<a href="http://stichtingpresent.nl/amsterdam/aanmelden/" target="_blank" class="button big buttme">MELD JE AAN</a>
+					</li>
+				</ul>
+			</section>
+		<!-- One -->
+			<section id="one" class="wrapper style2 special">
+				<div class="container">
+					<header class="major">
+						<h2>Hoe Werkt Present?</h2>
+						<p>Een brug slaan tussen mensen die iets hebben te bieden en mensen die daarmee geholpen kunnen worden.</p>
+					</header>
+					<footer>
+						<p>Als makelaar in vrijwilligerswerk bieden wij de mogelijkheid om je als groep of individu in Amsterdam in te zetten voor mensen die te maken hebben met armoede, een slechte gezondheid of een sociaal isolement.</p>
+						<ul class="actions">
+							<li>
+								<a href="http://stichtingpresent.nl/amsterdam/hoe-werkt-present/voor-vrijwilligers/" target="_blank" class="button big">Lees meer >></a>
+							</li>
+						</ul>
+					</footer>
+				</div>
+			</section>
+			
+					<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Highscores</h2>
+						<p>Hier zie of je er tussen staat!</p>
+					</header>
+					<div class="row 150%">
+						<div class="4u 12u$(medium)">
+							<section class="box">
+								<h3>Snelste tijd</h3>
+								<p><?php echo $row["name"]. " ". $row["seconds"]; ?></p>
+							</section>
+						</div>
+						<div class="4u 12u$(medium)">
+							<section class="box">
+								<h3>Meeste opgeruimt</h3>
+								<p><?php echo $row["name"] . " ". $row["seconds"]; ?></p>
+							</section>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<section class="box">
+								<h3>Vaakst gespeeld</h3>
+								<p><?php echo $row["name"]. " ". $row["seconds"]; ?></p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+		<!--	<section id="three" class="wrapper style3 special">-->
+		<!--		<div class="container">-->
+		<!--			<header class="major">-->
+		<!--				<h2>Aanmelden</h2>-->
+		<!--				<p>Meld je aan en help Stichting Present!</p>-->
+		<!--			</header>-->
+		<!--		</div>-->
+		<!--		<div class="container 50%">-->
+		<!--			<form action="#" method="post">-->
+		<!--				<div class="row uniform">-->
+		<!--					<div class="6u 12u$(small)">-->
+		<!--						<input name="name" id="name" value="" placeholder="Naam" type="text">-->
+		<!--					</div>-->
+		<!--					<div class="6u$ 12u$(small)">-->
+		<!--						<input name="email" id="email" value="" placeholder="Email" type="email">-->
+		<!--					</div>-->
+		<!--					<div class="12u$">-->
+		<!--						<textarea name="message" id="message" placeholder="Bericht" rows="6"></textarea>-->
+		<!--					</div>-->
+		<!--					<div class="12u$">-->
+		<!--						<ul class="actions">-->
+		<!--							<li><input value="Verzenden" class="special big" type="submit"></li>-->
+		<!--						</ul>-->
+		<!--					</div>-->
+		<!--				</div>-->
+		<!--			</form>-->
+		<!--		</div>-->
+		<!--	</section>-->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<!--<section class="links">-->
+					<!--	<div class="row">-->
+					<!--		<section class="3u 6u(medium) 12u$(small)">-->
+					<!--			<h3>Lorem ipsum dolor</h3>-->
+					<!--			<ul class="unstyled">-->
+					<!--				<li><a href="#">Lorem ipsum dolor sit</a></li>-->
+					<!--				<li><a href="#">Nesciunt itaque, alias possimus</a></li>-->
+					<!--				<li><a href="#">Optio rerum beatae autem</a></li>-->
+					<!--				<li><a href="#">Nostrum nemo dolorum facilis</a></li>-->
+					<!--				<li><a href="#">Quo fugit dolor totam</a></li>-->
+					<!--			</ul>-->
+					<!--		</section>-->
+					<!--		<section class="3u 6u$(medium) 12u$(small)">-->
+					<!--			<h3>Culpa quia, nesciunt</h3>-->
+					<!--			<ul class="unstyled">-->
+					<!--				<li><a href="#">Lorem ipsum dolor sit</a></li>-->
+					<!--				<li><a href="#">Reiciendis dicta laboriosam enim</a></li>-->
+					<!--				<li><a href="#">Corporis, non aut rerum</a></li>-->
+					<!--				<li><a href="#">Laboriosam nulla voluptas, harum</a></li>-->
+					<!--				<li><a href="#">Facere eligendi, inventore dolor</a></li>-->
+					<!--			</ul>-->
+					<!--		</section>-->
+					<!--		<section class="3u 6u(medium) 12u$(small)">-->
+					<!--			<h3>Neque, dolore, facere</h3>-->
+					<!--			<ul class="unstyled">-->
+					<!--				<li><a href="#">Lorem ipsum dolor sit</a></li>-->
+					<!--				<li><a href="#">Distinctio, inventore quidem nesciunt</a></li>-->
+					<!--				<li><a href="#">Explicabo inventore itaque autem</a></li>-->
+					<!--				<li><a href="#">Aperiam harum, sint quibusdam</a></li>-->
+					<!--				<li><a href="#">Labore excepturi assumenda</a></li>-->
+					<!--			</ul>-->
+					<!--		</section>-->
+					<!--		<section class="3u$ 6u$(medium) 12u$(small)">-->
+					<!--			<h3>Illum, tempori, saepe</h3>-->
+					<!--			<ul class="unstyled">-->
+					<!--				<li><a href="#">Lorem ipsum dolor sit</a></li>-->
+					<!--				<li><a href="#">Recusandae, culpa necessita nam</a></li>-->
+					<!--				<li><a href="#">Cupiditate, debitis adipisci blandi</a></li>-->
+					<!--				<li><a href="#">Tempore nam, enim quia</a></li>-->
+					<!--				<li><a href="#">Explicabo molestiae dolor labore</a></li>-->
+					<!--			</ul>-->
+					<!--		</section>-->
+					<!--	</div>-->
+					<!--</section>-->
+					<div class="row">
+						<div class="8u 12u$(medium)">
+							<ul class="copyright">
+								<li><a href="http://stichtingpresent.nl/amsterdam/" target="_blank"><FONT COLOR="#fff">&copy; Present</FONT></a> All rights reserved.</li>
+								<li><FONT COLOR="#fff">Design:</FONT> Marthijn, Thomas, Siem, Misael</li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<ul class="icons">
+								<li>
+									<a href="https://www.facebook.com/stichtingpresent.amsterdam/?fref=ts" target="_blank" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+								</li>
+								<li>
+									<a href="https://twitter.com/Presentnl" target="_blank" class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
+								</li>
+								<!--<li>-->
+								<!--	<a href="https://twitter.com/Presentnl" class="icon rounded fa-google-plus"><span class="label">Google+</span></a>-->
+								<!--</li>-->
+								<!--<li>-->
+								<!--	<a href="https://twitter.com/Presentnl" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>-->
+								<!--</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+	</body>
+</html>
